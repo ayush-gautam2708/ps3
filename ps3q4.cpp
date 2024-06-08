@@ -11,7 +11,7 @@ int main(){
 	cin >> n;
     vector<int>arr(n+1,0);
     vector<int> prefGcd(n+1,0);
-    vector<int> suffGcd(n+1,0);
+    vector<int> suffGcd(n+2,0);
 	for (int i=1;i<=n;i++) cin>>arr[i];
     for (int i = 1;i<=n;i++){
          prefGcd[i] = gcd(prefGcd[i - 1], arr[i]); 
